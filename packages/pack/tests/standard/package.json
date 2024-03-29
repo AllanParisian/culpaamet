@@ -1,0 +1,30 @@
+{
+    "name": "@test/standard",
+    "private": true,
+    "sideEffects": false,
+    "main": "./dist/index.bundle.js",
+    "module": "./dist/index.bundle.mjs",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "require": "./dist/index.bundle.js",
+            "import": "./dist/index.bundle.mjs"
+        }
+    },
+    "files": [
+        "dist"
+    ],
+    "devDependencies": {
+        "@techor/is-plain-obj": "",
+        "esbuild": "^0.18.11",
+        "pretty-bytes": "^6.1.0",
+        "@test/dev-dependency": "",
+        "typescript": "^4.9.5"
+    },
+    "dependencies": {
+        "@techor/log": ""
+    },
+    "peerDependencies": {
+        "@techor/extend": ""
+    }
+}

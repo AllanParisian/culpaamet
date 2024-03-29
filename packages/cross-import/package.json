@@ -1,0 +1,61 @@
+{
+    "name": "cross-import",
+    "scripts": {
+        "build:cjs": "esbuild src/index.ts --bundle --outfile=dist/index.js --format=cjs --minify --sourcemap --platform=node",
+        "build:type": "tsc --emitDeclarationOnly --preserveWatchOutput",
+        "build": "npm run build:cjs && npm run build:type",
+        "dev": "conc 'npm:build:* -- --watch'",
+        "test": "node -r sucrase/register ./tests/real && jest",
+        "type-check": "tsc --noEmit",
+        "lint": "eslint src"
+    },
+    "license": "MIT",
+    "description": "Import .ts, .mjs, .cjs files across environments as JavaScript modules",
+    "author": {
+        "name": "Aron",
+        "email": "i@aron.tw",
+        "url": "http://aron.tw"
+    },
+    "homepage": "https://aron.tw",
+    "bugs": {
+        "url": "https://github.com/1aron/techor/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/1aron/techor.git",
+        "directory": "packages/read-module"
+    },
+    "keywords": [
+        "cjs",
+        "mjs",
+        "config",
+        "utils",
+        "module",
+        "read",
+        "cross",
+        "environments",
+        "commonjs",
+        "ts",
+        "typescript"
+    ],
+    "sideEffects": false,
+    "publishConfig": {
+        "access": "public"
+    },
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "require": "./dist/index.js",
+            "import": "./dist/index.js",
+            "types": "./dist/index.d.ts"
+        }
+    },
+    "files": [
+        "dist"
+    ],
+    "devDependencies": {
+        "sucrase": "^3.32.0",
+        "jiti": "^1.18.2"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "name": "@test/pack-root",
+    "private": true,
+    "workspaces": [
+        "*"
+    ]
+}

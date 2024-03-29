@@ -1,0 +1,12 @@
+{
+    "name": "@test/exports",
+    "private": true,
+    "main": "./dist/index.js",
+    "types": "./dist/index.js",
+    "exports": {
+        ".": "./dist/index.js"
+    },
+    "files": [
+        "dist"
+    ]
+}

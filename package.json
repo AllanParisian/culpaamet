@@ -1,0 +1,33 @@
+{
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AllanParisian/culpaamet.git"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@types/fs-extra": "^9.0.13",
+    "@types/node": "^18.11.9",
+    "concurrently": "^7.5.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "jest-environment-jsdom": "^29.3.1",
+    "jest-puppeteer": "^6.1.1",
+    "parent-module": "^3.0.0",
+    "puppeteer": "^19.2.2",
+    "strip-ansi": "^7.0.1",
+    "sucrase": "^3.32.0",
+    "tmp": "^0.2.1",
+    "ts-dedent": "^2.2.0",
+    "tsx": "^3.12.6"
+  },
+  "engines": {
+    "node": "^18"
+  },
+  "dependencies": {
+    "turbo": "^1.10.7"
+  },
+  "name": "culpaamet",
+  "author": "BryonSchuster",
+  "version": "1.0.0"
+}

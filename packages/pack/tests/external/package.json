@@ -1,0 +1,22 @@
+{
+    "name": "@test/external",
+    "private": true,
+    "main": "dist/index.bundle.js",
+    "exports": {
+        ".": {
+            "require": "./dist/index.bundle.js"
+        }
+    },
+    "files": [
+        "dist"
+    ],
+    "dependencies": {
+        "@techor/log": ""
+    },
+    "peerDependencies": {
+        "@techor/extend": ""
+    },
+    "devDependencies": {
+        "@techor/is-plain-obj": ""
+    }
+}

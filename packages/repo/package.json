@@ -1,0 +1,39 @@
+{
+    "name": "@techor/repo",
+    "license": "MIT",
+    "description": "A monorepo ecosystem integrating first-class packages and build systems 📦",
+    "author": {
+        "name": "Aron",
+        "email": "i@aron.tw",
+        "url": "https://aron.tw"
+    },
+    "homepage": "https://aron.tw",
+    "bugs": {
+        "url": "https://github.com/1aron/techor/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/1aron/techor.git",
+        "directory": "packages/techor"
+    },
+    "files": [
+        "dist"
+    ],
+    "publishConfig": {
+        "access": "public"
+    },
+    "peerDependencies": {
+        "@types/node": "",
+        "turbo": "",
+        "typescript": ""
+    },
+    "dependencies": {
+        "@techor/pack": "",
+        "@techor/version": "",
+        "@techor/jest": "",
+        "commitlint-config-techor": "",
+        "conventional-changelog-techor": "",
+        "eslint-config-techor": "",
+        "semantic-release-config-techor": ""
+    }
+}

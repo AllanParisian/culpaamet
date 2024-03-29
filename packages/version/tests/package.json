@@ -1,0 +1,9 @@
+{
+    "name": "@test/version-root",
+    "private": true,
+    "workspaces": [
+        "a",
+        "b",
+        "c"
+    ]
+}

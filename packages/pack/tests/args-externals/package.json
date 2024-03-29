@@ -1,0 +1,13 @@
+{
+    "name": "@test/args-externals",
+    "private": true,
+    "main": "dist/index.js",
+    "exports": {
+        ".": {
+            "require": "./dist/index.js"
+        }
+    },
+    "files": [
+        "dist"
+    ]
+}

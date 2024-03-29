@@ -1,0 +1,7 @@
+{
+    "name": "@test/pack-c",
+    "private": true,
+    "peerDependencies": {
+        "@test/pack-a": ""
+    }
+}

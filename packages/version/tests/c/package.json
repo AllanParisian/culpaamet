@@ -1,0 +1,7 @@
+{
+    "name": "@test/c",
+    "private": true,
+    "peerDependencies": {
+        "@test/a": ""
+    }
+}

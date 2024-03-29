@@ -1,0 +1,60 @@
+{
+    "name": "techor",
+    "scripts": {
+        "build": "esbuild src/bin/index.ts --bundle --outfile=dist/bin/index.bundle.js --format=cjs --minify --platform=node --external:@techor/fs --external:@techor/log --external:commander --external:@techor/version --external:@techor/pack",
+        "dev": "npm run build -- --watch",
+        "type-check": "tsc --noEmit",
+        "lint": "eslint src"
+    },
+    "license": "MIT",
+    "description": "Author technology like a top leader",
+    "author": {
+        "name": "Aron",
+        "email": "i@aron.tw",
+        "url": "https://aron.tw"
+    },
+    "homepage": "https://github.com/1aron/techor",
+    "bugs": {
+        "url": "https://github.com/1aron/techor/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/1aron/techor.git",
+        "directory": "packages/techor"
+    },
+    "keywords": [
+        "author",
+        "technology",
+        "creator",
+        "config",
+        "opensource",
+        "plugin",
+        "package",
+        "framework",
+        "tool",
+        "software",
+        "pack",
+        "esbuild",
+        "version",
+        "bump",
+        "bundle",
+        "commonjs",
+        "esm",
+        "esmodule"
+    ],
+    "bin": {
+        "techor": "./dist/bin/index.bundle.js"
+    },
+    "files": [
+        "dist"
+    ],
+    "sideEffects": false,
+    "publishConfig": {
+        "access": "public"
+    },
+    "dependencies": {
+        "@techor/fs": "",
+        "@techor/log": "",
+        "commander": "^10.0.0"
+    }
+}
